@@ -23,6 +23,8 @@ class MetadataDriver
             $finder = new Finder();
             $finder->files()->files()->in(array(
                 __DIR__.'/../../../../src/*/Document',
+                __DIR__.'/../../../../src/Document',
+                __DIR__.'/../../../../src/Documents',
                 // __DIR__.'/../../../../src/*/*/Document',
             ));
             foreach($finder as $file){
